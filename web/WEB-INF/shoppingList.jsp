@@ -24,10 +24,10 @@
             <input type="submit" value="add">
         </form>
         
-        <form method="post" action =" ">
+        <form method="post" action ="ShoppingList">
             <ul>
-                <c:forEach items="${items}" var="items">
-                    <li><input type="radio" name="itemsList" value="${items}"</li>${items}
+                <c:forEach items="${addList}" var="addItem">
+                    <li><input type="radio" name="item" value="${addItem}"</li>${addItem}
                 </c:forEach>
             </ul>
         <input type="hidden" value="delete" name="action">
